@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Aluna = require('../models/Aluna');
+const Dormitorio = require('../models/Dormitorio');
 
 //Busca todas as alunas (GET)
 router.get('/', async (req, res) => {
@@ -16,7 +17,16 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
     try {
         const { nome, idade, cpf, semestre, curso, dormitorio } = req.body;
-        const newAluna = new Aluna({ nome, idade, cpf, semestre, curso, dormitorio });
+        const dorm = await Dormitorio.findOne({
+            andar: dormitorio.andar,
+            porta: dormitorio.porta
+        });
+
+        if(!dorm) {
+            return res.status(404).json({ error: "Dormitório não encontrado" });
+        };
+
+        const newAluna = new Aluna({ nome, idade, cpf, semestre, curso, dormitorio: [dorm._id] });
         await newAluna.save();
         res.status(201).json({ message: 'Cadastro feito com sucesso!' });
     } catch (error) {

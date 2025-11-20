@@ -13,7 +13,7 @@ const DormitorioSchema = new Schema({
         type: Number,
         required: true
     }
-}, { collection: 'Dormitorio '}); //Especifica o nome da coleção
+}, { collection: 'Dormitorio'}); //Especifica o nome da coleção
 
 //Cria o modelo com base no esquema
 const Dormitorio = mongoose.model("Dormitorio", DormitorioSchema);
