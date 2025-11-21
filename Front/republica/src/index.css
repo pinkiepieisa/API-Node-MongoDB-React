@@ -1,0 +1,16 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+
+  min-height: 100vh;
+  width: 100vw;
+  background: #ffc4dc;
+  background: radial-gradient(circle,rgba(255, 196, 220, 1) 25%, rgba(182, 217, 252, 1) 100%);
+  
+}
