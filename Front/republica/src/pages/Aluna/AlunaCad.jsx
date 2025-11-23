@@ -33,3 +33,5 @@ function AlunaCad() {
     )
 
 }
+
+export default AlunaCad;

@@ -1,14 +1,21 @@
+import { Link } from 'react-router-dom'
 import './style.css'
 
  export default function Home() {
 
   return (
- 
-    <section className='links' style={{justifyContent: 'center'}}>
-      <link to = '/'
-    </section>
 
-  )
+    <div className="Links">
+
+      <Link to="/aluna">
+        <button title='área da aluna'> Área da aluna </button>
+      </Link>
+
+    </div>
+  );
+
 }
+
+
 
 
