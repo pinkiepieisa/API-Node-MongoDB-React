@@ -8,21 +8,20 @@ function AlunaCad() {
             <form>
                 <h1>Cadastro da Aluna</h1>
 
-                <input name = 'nome' type='text'/>
+                <input placeholder='Nome:' name = 'nome' type='text'/>
                 <br/ >
-                <input name = 'idade' type='number'/>
+                <input placeholder='Idade:' name = 'idade' type='number'/>
                 <br/ >
-                <input name = 'cpf' type='text'/>
+                <input placeholder='CPF:' name = 'cpf' type='text'/>
                 <br/ >
-                <input name = 'semestre' type='number'/>
+                <input placeholder='Semestre:' name = 'semestre' type='number'/>
                 <br/ >
-                <input name = 'curso' type='text'/>
-                <br/ >
-                <label name = 'dormitorio'/>
+                <input placeholder='Curso:' name = 'curso' type='text'/>
                 <br />
-                <input name = 'andar' type='number'/>
+                <p name = 'dormitorio'> Dormitório: </p>
+                <input placeholder='Andar:' name = 'andar' type='number'/>
                 <br/ >
-                <input name = 'porta' type='number'/>
+                <input placeholder='Porta:' name = 'porta' type='number'/>
                 <br/ >
 
                 <button type='submit'> Cadastrar </button>
