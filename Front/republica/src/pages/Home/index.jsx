@@ -7,16 +7,27 @@ import '../../index.css'
 
     <div className="Links">
 
-      <div className='containerGeral'>
 
-        <Link to="/aluna">
-          <button title='área da aluna'> Área da aluna </button>
-        </Link>
+      <div className='inicio'>
+
+        <h1> República </h1>
 
         <br></br>
 
+        <p>Bem vinda! <br></br> Escolha uma opção: </p>
+
+      </div>
+
+      <div className='containerGeral'>
+
+        <Link to="/aluna">
+          <button className='glow-on-hover' title='área da aluna'> Área da aluna </button>
+        </Link>
+
+        <br></br> <br></br><br />
+
         <Link to="/dormitorio">
-          <button title='área do dormitório'> Área do dormitório </button>
+          <button className='glow-on-hover' title='área do dormitório'> Área do dormitório </button>
         </Link>
 
       </div>
