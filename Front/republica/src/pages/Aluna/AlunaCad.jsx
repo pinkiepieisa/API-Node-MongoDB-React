@@ -11,13 +11,17 @@ function AlunaCad() {
             <div className='volta'>
 
 
-                    <button className='voltar'>
+                <button className='voltar'>
 
-                        <Link to="/">            
-                            <img src={Seta} />
-                        </Link>    
+                    <Link to="/">            
+                        <img src={Seta} />
+                    </Link>    
 
-                    </button>
+                </button>
+
+                
+
+
             
             </div>
 
