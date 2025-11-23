@@ -6,7 +6,7 @@ const Dormitorio = require('../models/Dormitorio');
 //Busca todas as alunas (GET)
 router.get('/', async (req, res) => {
     try {
-        const alunas = await Aluna.find();
+        const alunas = await Aluna.find().populate('dormitorio');
         res.status(200).json(alunas);
     } catch (error) {
         res.status(500).json({ error: error.message });

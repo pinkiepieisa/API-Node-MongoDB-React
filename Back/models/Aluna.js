@@ -26,11 +26,11 @@ const AlunaSchema = new Schema({
         type: String,
         required: true
     }, 
-    dormitorio: [{
+    dormitorio: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Dormitorio',
         required: true
-    }]
+    }
 }, { collection: 'Aluna' }); //Especifica o nome da collection
 
 //Cria o modelo baseado no esquema

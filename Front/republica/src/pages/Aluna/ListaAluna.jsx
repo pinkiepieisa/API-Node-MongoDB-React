@@ -8,8 +8,7 @@ function ListaAluna() {
 
     async function getUsers() {
         const usersFromApi = await api.get('/aluna');
-
-        setUsers(usersFromApi.data)
+        setUsers(usersFromApi.data);
     }
 
     useEffect(() => {
@@ -21,9 +20,17 @@ function ListaAluna() {
 
         <>
 
+            <div className='novadiv'>
+
+                <h1> Alunas cadastradas na república: </h1>
+
+            </div>
+
             {users.map((user) => (
 
+
                 <div key={user._id} className='listaExibir'>
+
 
                     <div className='listar'>
 
@@ -39,9 +46,11 @@ function ListaAluna() {
                     </div>
                     
 
-                    <div>
+                    <div className='botoes'>
 
                         <button> Apagar </button>
+
+                        <button> Editar </button>
 
                     </div>
 
