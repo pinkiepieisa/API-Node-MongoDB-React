@@ -1,10 +1,10 @@
-import './aluna.css'
+import '../../index.css'
 
 function AlunaCad() {
 
     return (
 
-        <div className='containerAlu'>
+        <div className='container'>
             <form>
                 <h1>Cadastro da Aluna</h1>
 

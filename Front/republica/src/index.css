@@ -14,3 +14,66 @@ body {
   background: radial-gradient(circle,rgba(255, 196, 220, 1) 25%, rgba(182, 217, 252, 1) 100%);
   
 }
+
+form {
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(150, 222, 250, 0.671);
+    max-width: 50%;
+    width: 400px;
+    margin-bottom: 20px;
+
+
+    & button {
+
+        border-radius: 7px;
+        background-color: rgba(255, 182, 193, 0.699);
+        border-color: deeppink;
+        padding: 7px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+
+    }
+
+    & button:hover {
+
+        background-color: deeppink;
+        color: black;
+        cursor: pointer;
+        padding: 9px;
+
+    }
+
+    & h1, p {
+
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-style: oblique;
+        font-weight: bolder;
+    }
+
+    & input {
+
+        background-color: rgba(136, 212, 238, 0.89);
+        border: 10px;
+        border-color: cadetblue;
+        border-radius: 5px;
+        padding: 5px;
+
+    }
+
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
