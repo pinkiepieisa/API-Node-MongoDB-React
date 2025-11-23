@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './style.css'
+import '../../index.css'
 
  export default function Home() {
 
@@ -7,15 +7,19 @@ import './style.css'
 
     <div className="Links">
 
-      <Link to="/aluna">
-        <button title='área da aluna'> Área da aluna </button>
-      </Link>
+      <div className='containerGeral'>
 
-      <br></br>
+        <Link to="/aluna">
+          <button title='área da aluna'> Área da aluna </button>
+        </Link>
 
-      <Link to="/dormitorio">
-        <button title='área do dormitório'> Área do dormitório </button>
-      </Link>
+        <br></br>
+
+        <Link to="/dormitorio">
+          <button title='área do dormitório'> Área do dormitório </button>
+        </Link>
+
+      </div>
 
     </div>
   );

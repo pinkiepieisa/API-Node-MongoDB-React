@@ -1,20 +1,42 @@
-import './dormitorio.css'
+import '../../index.css'
+import Seta from "../../assets/line_start.svg"
+import { Link } from 'react-router-dom'
+
 
 function Dormitorio() {
 
     return (
 
-        <div className='container'>
+        <div className='geral'>
 
-            <form>
-                <h1> Dormitório: </h1>
-                <input placeholder='Andar:' name = 'andar' type='number'/>
-                <br/ >
-                <input placeholder='Porta:' name = 'porta' type='number'/>
-                <br/ >
+            <div className='volta'>
+                
+                    <button className='voltar'>
 
-                <button type='submit'> Cadastrar </button>
-            </form>
+                        <Link to="/">            
+                            <img src={Seta} />
+                        </Link>    
+
+                    </button>
+
+            </div>
+
+
+            <div className='container'>
+
+                <form>
+
+                    <h1> Cadastro de dormitório: </h1>
+                    <input placeholder='Andar:' name = 'andar' type='number'/>
+                    <br/ >
+                    <input placeholder='Porta:' name = 'porta' type='number'/>
+                    <br/ >
+
+                    <button type='submit'> Cadastrar </button>
+
+                </form>
+
+            </div>
 
         </div>
 
