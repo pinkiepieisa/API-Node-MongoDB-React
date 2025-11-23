@@ -11,13 +11,19 @@ function Dormitorio() {
 
             <div className='volta'>
                 
-                    <button className='voltar'>
+                <button className='voltar'>
 
-                        <Link to="/">            
-                            <img src={Seta} />
-                        </Link>    
+                    <Link to="/">            
+                        <img src={Seta} />
+                    </Link>    
 
-                    </button>
+                </button>
+
+                <button className="lista">
+
+                    <Link to="/listadormitorios"> Lista dos dormitórios </Link>
+
+                </button>
 
             </div>
 

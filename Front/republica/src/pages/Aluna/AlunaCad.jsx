@@ -19,8 +19,11 @@ function AlunaCad() {
 
                 </button>
 
-                
+                <button className="lista">
 
+                    <Link to="/listaalunas"> Lista das alunas </Link>
+
+                </button>
 
             
             </div>
