@@ -214,9 +214,28 @@ form {
 
 
 
-  & .botoes {
+  & .botoes button {
+
+    border-radius: 7px;
+    background-color: rgba(255, 182, 193, 0.699);
+    border-color: #ff1493;
+    padding: 7px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    width: 100px;
+    margin: 5px;
+    cursor: pointer;
+
+  }
 
 
+  & .botoes button:hover {
+
+    background-color: deeppink;
+    color: black;
+    cursor: pointer;
+    padding: 9px;
 
   }
 
