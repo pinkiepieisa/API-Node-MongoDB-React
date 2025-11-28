@@ -28,6 +28,7 @@ function ListaAluna() {
 
     };
 
+
     return (
 
         <>
@@ -76,7 +77,15 @@ function ListaAluna() {
                         <button onClick={() => deleteUsers(user._id)}> Apagar </button>
                         {/*Quando é necessário passar um parâmetro para a função*/}  
 
-                        <button> Editar </button>
+                        <button> 
+
+                            <Link to = "/atualizaraluna">
+
+                                Editar 
+
+                            </Link>    
+
+                            </button>
 
                     </div>
 
