@@ -20,6 +20,14 @@ function ListaAluna() {
 
     }, []);
 
+    async function deleteUsers(id) {
+        
+        await api.delete(`/aluna/${id}`);
+
+        getUsers();
+
+    };
+
     return (
 
         <>
@@ -65,7 +73,8 @@ function ListaAluna() {
 
                     <div className='botoes'>
 
-                        <button> Apagar </button>
+                        <button onClick={() => deleteUsers(user._id)}> Apagar </button>
+                        {/*Quando é necessário passar um parâmetro para a função*/}  
 
                         <button> Editar </button>
 

@@ -1,7 +1,9 @@
 import Seta from "../../assets/line_start.svg"
 import { Link } from 'react-router-dom'
 import '../../index.css'
-import { use, useRef } from "react"
+import {  useRef } from "react"
+import api from '../../services/api'
+
 
 function AlunaCad() {
 
@@ -12,6 +14,24 @@ function AlunaCad() {
     const inputCurso = useRef();
     const inputPorta = useRef();
     const inputAndar = useRef();
+
+    async function createUsers() {
+        
+        await api.post('/aluna', {
+
+            nome: inputNome.current.value,
+            idade: inputIdade.current.value,
+            cpf: inputCpf.current.value,
+            semestre: inputSem.current.value,
+            curso: inputCurso.current.value,
+            dormitorio: {
+                andar:inputAndar.current.value,
+                porta: inputPorta.current.value
+            }
+            
+        });
+
+    }
 
 
     return (
@@ -60,7 +80,7 @@ function AlunaCad() {
                     <input placeholder='Porta:' name = 'porta' type='number' ref={ inputPorta }/>
                     <br/ >
 
-                    <button type='submit'> Cadastrar </button>
+                    <button type='submit' onClick={createUsers}> Cadastrar </button>
 
                 </form>
 
