@@ -78,18 +78,12 @@ form {
 
 }
 
-.volta button {
+.containerA {
 
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  position: absolute;
-  right: 0.5%;
-
-  & img {
-
-    height: 35px;
-  }
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -106,6 +100,7 @@ form {
 }
 
 .glow-on-hover {
+
   width: 300px;
   border: none;
   outline: none;
@@ -118,9 +113,11 @@ form {
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 30px;
   font-size: 20px;
+
 }
 
 .glow-on-hover:before {
+
   content: '';
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
@@ -135,6 +132,7 @@ form {
   opacity: 0;
   transition: opacity .3s ease-in-out;
   border-radius: 10px;
+
 }
 
 .glow-on-hover:active {
@@ -199,7 +197,7 @@ form {
   justify-content: space-between;
   
 
-  & .listar{
+  & .listar {
 
     background-color: rgba(250, 126, 188, 0.774);
     margin: 10px;
@@ -253,5 +251,68 @@ form {
     color: #fff;
 
   }
+
+}
+
+.volta {
+
+  width: 100%;
+  position: relative;
+  padding: 8px;
+
+  & .voltar  {
+
+    position: absolute;
+    right: 2%;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+
+  }
+
+  & img {
+
+    height: 35px;
+  }
+
+ & .lista  {
+
+    position: absolute;
+    left: 1%;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    
+
+  }
+
+}
+
+.voltaL {
+
+  position: absolute;
+  right: 2%;
+  cursor: pointer;
+
+  & button {
+
+    background: none;
+    border: none;
+    padding: 8px;
+
+      & img {
+
+      height: 40px;
+
+    }
+
+  }
+
+}
+
+button a {
+
+  text-decoration: none;
 
 }

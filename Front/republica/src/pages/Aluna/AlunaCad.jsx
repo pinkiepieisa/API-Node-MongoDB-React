@@ -1,8 +1,18 @@
 import Seta from "../../assets/line_start.svg"
 import { Link } from 'react-router-dom'
 import '../../index.css'
+import { use, useRef } from "react"
 
 function AlunaCad() {
+
+    const inputNome = useRef();
+    const inputIdade = useRef();
+    const inputCpf = useRef();
+    const inputSem = useRef();
+    const inputCurso = useRef();
+    const inputPorta = useRef();
+    const inputAndar = useRef();
+
 
     return (
 
@@ -28,26 +38,26 @@ function AlunaCad() {
             
             </div>
 
-            <div className='container'>
+            <div className='containerA'>
 
 
                 <form>
-                    <h1>Cadastro da Aluna</h1>
+                    <h1> Cadastro da Aluna </h1>
 
-                    <input placeholder='Nome:' name = 'nome' type='text'/>
+                    <input placeholder='Nome:' name = 'nome' type='text' ref={ inputNome }/>
                     <br/ >
-                    <input placeholder='Idade:' name = 'idade' type='number'/>
+                    <input placeholder='Idade:' name = 'idade' type='number' ref={ inputIdade }/>
                     <br/ >
-                    <input placeholder='CPF:' name = 'cpf' type='text'/>
+                    <input placeholder='CPF:' name = 'cpf' type='text' ref={ inputCpf }/>
                     <br/ >
-                    <input placeholder='Semestre:' name = 'semestre' type='number'/>
+                    <input placeholder='Semestre:' name = 'semestre' type='number' ref={ inputSem }/>
                     <br/ >
-                    <input placeholder='Curso:' name = 'curso' type='text'/>
+                    <input placeholder='Curso:' name = 'curso' type='text' ref = { inputCurso} />
                     <br />
                     <p name = 'dormitorio'> Dormitório: </p>
-                    <input placeholder='Andar:' name = 'andar' type='number'/>
+                    <input placeholder='Andar:' name = 'andar' type='number' ref={ inputAndar }/>
                     <br/ >
-                    <input placeholder='Porta:' name = 'porta' type='number'/>
+                    <input placeholder='Porta:' name = 'porta' type='number' ref={ inputPorta }/>
                     <br/ >
 
                     <button type='submit'> Cadastrar </button>

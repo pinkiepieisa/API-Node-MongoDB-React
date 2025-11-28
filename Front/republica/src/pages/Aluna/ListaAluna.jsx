@@ -1,14 +1,18 @@
 import { useEffect, useState } from 'react';
 import '../../index.css'
 import api from '../../services/api';
+import { Link } from 'react-router-dom';
+import Seta from "../../assets/line_start.svg"
 
 function ListaAluna() {
 
     const [users, setUsers] = useState([]);
 
     async function getUsers() {
+
         const usersFromApi = await api.get('/aluna');
         setUsers(usersFromApi.data);
+        
     }
 
     useEffect(() => {
@@ -19,6 +23,19 @@ function ListaAluna() {
     return (
 
         <>
+
+            <div className='voltaL'>
+
+                <button>
+                    
+                    <Link to="/">
+                        <img src={Seta} />
+                    </Link>
+
+                </button>
+
+            </div>
+
 
             <div className='novadiv'>
 
