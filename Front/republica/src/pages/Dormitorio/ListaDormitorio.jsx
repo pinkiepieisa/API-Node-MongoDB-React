@@ -22,6 +22,14 @@ function ListaDormitorio() {
 
     }, []);
 
+    async function deleteDorms(id) {
+        
+        await api.delete(`/dormitorio/${id}`);
+
+        getDorms();
+
+    };
+
 
     return (
 
@@ -63,7 +71,7 @@ function ListaDormitorio() {
 
                     <div className='botoes'>
 
-                        <button> Apagar </button>
+                        <button onClick={ () => deleteDorms(dorm._id) }> Apagar </button>
 
                        {/*} <button> Editar </button> */} 
 
