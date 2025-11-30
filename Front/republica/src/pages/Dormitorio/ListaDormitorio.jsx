@@ -65,7 +65,7 @@ function ListaDormitorio() {
 
                         <button> Apagar </button>
 
-                        <button> Editar </button>
+                       {/*} <button> Editar </button> */} 
 
                     </div>
 
